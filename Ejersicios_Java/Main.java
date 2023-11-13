@@ -1,3 +1,5 @@
+package Ejersicios_Java;
+
 import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.util.Scanner;
 
