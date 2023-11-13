@@ -1,3 +1,4 @@
+import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.util.Scanner;
 
 public class Main {
@@ -58,7 +59,68 @@ public class Main {
              System.out.println("Estas en un estado por debajo de lo normal");
          }*/
 
+          //Ejersicio 1 Calculador para edad de perros
+          /*System.out.println("Ingrese la edad de su perro");
+          Scanner cargarDatos = new Scanner(System.in);
 
+          Integer edadPerro = cargarDatos.nextInt();
+          //Se dice que un año de un perro e equivalente a 7 años de una persona
 
+          Integer calcularEdad = 7 * edadPerro;
+
+          System.out.println("La edad de su perro en años humanos es de " + calcularEdad);*/
+
+          //Ejersicio 2 Conversor de millas a kilometros
+          /*System.out.println("Ingrese las millas a convertir");
+          Scanner cargarDatos = new Scanner(System.in);
+
+          double millas = cargarDatos.nextDouble();
+
+          double kilometros = millas * 1.60934;
+
+          System.out.println("Las millas ingresadas equivalen a " + kilometros + " Kilometros");*/
+
+          //Ejersicio 3 calculadora de descuento
+          /*Scanner cargarDatos = new Scanner(System.in);
+          System.out.println("Ingrese el precio del producto");
+          double precio = cargarDatos.nextDouble();
+
+          System.out.println("Ingrese el descuento del producto en porcentaje %");
+          double porcentaje = cargarDatos.nextDouble() / 100;
+
+          double precioFinal = precio - (precio * porcentaje);
+
+          System.out.println("El precio final con descuento es del " + precioFinal);*/
+
+          //Ejersicio 4 calculadora de propinas
+          /*Scanner cargarDatos = new Scanner(System.in);
+          System.out.println("Ingrese el total de la cuenta a pagar");
+          double totalPagar = cargarDatos.nextDouble();
+
+          System.out.println("Ingrese el total de su propina en %");
+          double totalPropina = cargarDatos.nextDouble()/100;
+
+          double propina = totalPropina * totalPagar;
+
+          System.out.println("El total de su propina es de " + propina);*/
+
+          //Ejersicio 5 juego de adivinar el numero
+
+          //Aqui generamos un numero aleatorio ente y 10
+          Integer numero = (int) (Math.random()*10+1);
+
+          //Aqui mostramos el numero aleatorio
+          System.out.println("El numero aleatorio es " + numero);
+
+          System.out.println("Ingrese un numero");
+          Scanner cargarDato = new Scanner(System.in);
+          Integer numeroIngresado = cargarDato.nextInt();
+
+          //Aqui comparamos el numero aleatorio generado con el ingresado por consola
+          if (numeroIngresado == numero) {
+               System.out.println("FELICIDADES, adivinaste el numero");
+          } else {
+               System.out.println("UPS, no has adivinado el numero");
+          }
      }
 }
