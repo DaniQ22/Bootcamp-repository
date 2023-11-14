@@ -7,7 +7,7 @@ public class Main {
 
         //Creemos un arrglo que permita mal usuario guardar 5 numeros y mostrarlos en pantalla
         Scanner cargarDatos = new Scanner(System.in);
-        int[] numeros = new int[5];
+        /*int[] numeros = new int[5];
 
         //Aplicando bucle for
 
@@ -37,7 +37,7 @@ public class Main {
 
         //Ahora vamos a mostrar el numero mayor y menos del arreglo
         //Primero declaramos nos varibles mayor y menos y se inizializan en 0
-        int mayor = 0;
+        /*int mayor = 0;
         int menor = 0;
 
         for (int i = 0; i <numeros.length; i++){
@@ -61,7 +61,7 @@ public class Main {
         System.out.println("La suma de los valores en el arrelgo es " + suma);
         float promedio = suma/numeros.length;
 
-        System.out.println("El promedio el arreglo es de " + promedio);
+        System.out.println("El promedio el arreglo es de " + promedio);*/
         /*contador = 0;
         do {
             System.out.println(numeros[contador]);
@@ -72,5 +72,35 @@ public class Main {
             contador++;
         }*/
 
+        //Programa de la historia interactiva utulizando arreglos
+        //Primero creamo el arreglo que alamacenara toda la hostoria
+        String[] historia = {"Es una noche estrellada, te encuentras en un bosque misterioso:",
+                "1) Exploras la oscuridad en busca de la fuente de un susurro escalofriante",
+                "2) Sigues el sendero iluminado hacia una pequeña cabaña acogedora",
+                "Decides seguir el sendero iluminado hacia la pequeña cabaña acogedora. Al llegar a la cabaña, te das cuenta de que hay dos puertas:",
+                "1) Entras por la puerta de la izquierda",
+                "2) Optas por la puerta de la derecha",
+                "Al abrir la puerta de la izquierda, te encuentras con una habitación llena de tesoros brillantes y mágicos. Te maravillas con las joyas y los objetos preciosos que llenan la sala. Te das cuenta de que has encontrado el legendario tesoro perdido del bosque. Con tu corazón lleno de emoción y riquezas, decides regresar a casa para compartir tu increíble aventura con el mundo. ¡Felicidades, has tenido un final exitoso en tu búsqueda!",
+                "Ups, has escogido la opción incorrecta"};
+
+        for (int i = 0; i < 3; i++){
+            System.out.println(historia[i]);
+        }
+
+        int opcion = cargarDatos.nextInt();
+        if (opcion ==1){
+                System.out.println("Ups, elegiste el camino equivocado en la historia");
+            }else if (opcion==2) {
+            for (int i = 3; i <= 5; i++) {
+                System.out.println(historia[i]);
+            }
+                opcion = cargarDatos.nextInt();
+                if (opcion == 1) {
+                    System.out.println(historia[6]);
+                } else {
+                    System.out.println(historia[7]);
+                }
+        }
     }
-}
+    }
+
