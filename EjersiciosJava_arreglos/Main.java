@@ -74,7 +74,7 @@ public class Main {
 
         //Programa de la historia interactiva utulizando arreglos
         //Primero creamo el arreglo que alamacenara toda la hostoria
-        String[] historia = {"Es una noche estrellada, te encuentras en un bosque misterioso:",
+        /*String[] historia = {"Es una noche estrellada, te encuentras en un bosque misterioso:",
                 "1) Exploras la oscuridad en busca de la fuente de un susurro escalofriante",
                 "2) Sigues el sendero iluminado hacia una pequeña cabaña acogedora",
                 "Decides seguir el sendero iluminado hacia la pequeña cabaña acogedora. Al llegar a la cabaña, te das cuenta de que hay dos puertas:",
@@ -100,7 +100,37 @@ public class Main {
                 } else {
                     System.out.println(historia[7]);
                 }
+        }*/
+
+        //Ejersicios con arreglos
+        //Escribe un programa que sume todos los elementos de un arreglo de enteros.
+        /*System.out.println("Ingrese el tamaño del arreglo");
+        int tamañoArrlego = cargarDatos.nextInt();
+        int [] numeros = new int[tamañoArrlego];
+        for (int indice = 0; indice < tamañoArrlego; indice++){
+            System.out.println("Ingrese los numero en el arreglo");
+            numeros[indice] = cargarDatos.nextInt();
         }
+        int suma = 0;
+        for (int indice = 0; indice < tamañoArrlego; indice++){
+            suma += numeros[indice];
+        }
+        System.out.println("La suma de lo numeros en el arreglo es: " +suma);*/
+        //Escribe un programa que encuentre el valor máximo en un arreglo de números enteros.
+       /*System.out.println("Ingrese el tamaño del arreglo");
+        int tamañoArrlego = cargarDatos.nextInt();
+        int [] numeros = new int[tamañoArrlego];
+        for (int indice = 0; indice < tamañoArrlego; indice++){
+            System.out.println("Ingrese los numero en el arreglo");
+            numeros[indice] = cargarDatos.nextInt();
+        }
+        int maximo = numeros[0];
+        for (int indice = 0; indice < tamañoArrlego; indice++){
+            if (numeros[indice]>maximo){
+                maximo = numeros[indice];
+            }
+        }
+        System.out.println("El valor maximo del arreglo es" +maximo);*/
     }
     }
 
